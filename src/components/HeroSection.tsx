@@ -14,7 +14,7 @@ export const HeroSection = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            Conecte Talentos com Oportunidades
+            IA Code Labs: Conecte Talentos com Oportunidades
           </h1>
           <p className="text-xl md:text-2xl mb-8 opacity-90">
             A plataforma que une profissionais qualificados às melhores empresas do mercado
@@ -38,7 +38,7 @@ export const HeroSection = () => {
               <p className="opacity-90 mb-4">
                 Publique suas vagas e encontre os melhores candidatos
               </p>
-              <Link to="/jobs/new"><Button variant="secondary" className="w-full">Publicar Vaga</Button></Link>
+              <Link to="/auth"><Button variant="secondary" className="w-full">Publicar Vaga</Button></Link>
             </div>
             
             <div className="bg-background/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">

@@ -8,7 +8,7 @@ export const Footer = () => {
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <Briefcase className="h-8 w-8 text-primary" />
-              <span className="text-2xl font-bold">JobConnect</span>
+              <span className="text-2xl font-bold">MX Vagas</span>
             </div>
             <p className="text-background/80 mb-4">
               Conectando talentos excepcionais às melhores oportunidades do mercado.
@@ -16,7 +16,7 @@ export const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span className="text-sm">contato@jobconnect.com</span>
+                <span className="text-sm">contato@iacodelabs.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-primary" />
@@ -62,7 +62,7 @@ export const Footer = () => {
 
         <div className="border-t border-background/20 mt-12 pt-8 text-center">
           <p className="text-background/60">
-            © 2024 JobConnect. Todos os direitos reservados.
+            © 2025 MX Vagas. Todos os direitos reservados.
           </p>
         </div>
       </div>
