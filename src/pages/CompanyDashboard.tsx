@@ -74,7 +74,7 @@ export default function CompanyDashboard() {
   const myJobIds = jobs.map(j => j.id);
   const applications = allApplications.filter(app => myJobIds.includes(app.jobId));
 
-  useSEO({ title: `Dashboard - ${companyName} | IA Code Labs`, description: "Dashboard da empresa para gerenciar vagas e candidaturas." });
+  useSEO({ title: `Dashboard - ${companyName} | MX Vagas`, description: "Dashboard da empresa para gerenciar vagas e candidaturas." });
 
   // Dados simulados para candidatos
   const [candidates, setCandidates] = useState([
@@ -103,7 +103,7 @@ export default function CompanyDashboard() {
         : type === 'candidates' ? "ID,Nome,Email,Cargo,Status,Data Candidatura,Experiência\n"
           + candidates.map(c => `${c.id},${c.name},${c.email},${c.jobTitle},${c.status},${c.appliedAt},${c.experience}`).join("\n")
         : "ID,Nome,Email,Vaga,Status,Data\n"
-          + applications.map(a => `${a.id},${a.name},${a.email},${a.jobId},${a.status},${a.createdAt}`).join("\n"));
+          + applications.map(a => `${a.id},${a.name},${a.email},${a.jobId},${a.status},${a.appliedAt}`).join("\n"));
     
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");
@@ -233,11 +233,11 @@ export default function CompanyDashboard() {
         <div className="p-4 border-b border-gray-200 dark:border-gray-700">
           <div className="flex items-center space-x-3">
             <div className="p-2 bg-primary rounded-lg">
-              <img src="/ia-code-labs-logo.svg" alt="IA Code Labs" className="h-6 w-6" />
+              <img src="https://mxsfornecedores.iacodelabs.com.br/favicon.svg" alt="MX Vagas" className="h-6 w-6" />
             </div>
             {sidebarOpen && (
               <div>
-                <h1 className="font-bold text-lg">IA Code Labs</h1>
+                <h1 className="font-bold text-lg">MX Vagas</h1>
                 <p className="text-xs text-gray-500">Painel Empresa</p>
               </div>
             )}

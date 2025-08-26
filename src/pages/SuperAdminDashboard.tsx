@@ -102,11 +102,11 @@ export default function SuperAdminDashboard() {
         <div className="p-4 border-b border-gray-200 dark:border-gray-700">
           <div className="flex items-center space-x-3">
             <div className="p-2 bg-primary rounded-lg">
-              <img src="/ia-code-labs-logo.svg" alt="IA Code Labs" className="h-6 w-6 text-white" />
+              <img src="https://mxsfornecedores.iacodelabs.com.br/favicon.svg" alt="MX Vagas" className="h-6 w-6 text-white" />
             </div>
             {sidebarOpen && (
               <div>
-                <h1 className="font-bold text-lg">IA Code Labs</h1>
+                <h1 className="font-bold text-lg">MX Vagas</h1>
                 <p className="text-xs text-gray-500">Super Admin</p>
               </div>
             )}
@@ -1122,7 +1122,7 @@ export default function SuperAdminDashboard() {
                   <CardContent className="space-y-4">
                     <div className="space-y-2">
                       <Label htmlFor="siteName">Nome da Plataforma</Label>
-                      <Input id="siteName" defaultValue="IA Code Labs" />
+                      <Input id="siteName" defaultValue="MX Vagas" />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="siteDescription">Descrição</Label>
