@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Search, Building2, Users } from "lucide-react";
 import heroImage from "@/assets/hero-jobs.jpg";
+import { Link } from "react-router-dom";
 
 export const HeroSection = () => {
   return (
@@ -27,9 +28,7 @@ export const HeroSection = () => {
                 className="pl-10 h-12 text-foreground bg-background border-none"
               />
             </div>
-            <Button size="lg" className="bg-background text-primary hover:bg-background/90 h-12">
-              Buscar Vagas
-            </Button>
+            <Link to="/jobs"><Button size="lg" className="bg-background text-primary hover:bg-background/90 h-12">Buscar Vagas</Button></Link>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
@@ -39,9 +38,7 @@ export const HeroSection = () => {
               <p className="opacity-90 mb-4">
                 Publique suas vagas e encontre os melhores candidatos
               </p>
-              <Button variant="secondary" className="w-full">
-                Publicar Vaga
-              </Button>
+              <Link to="/jobs/new"><Button variant="secondary" className="w-full">Publicar Vaga</Button></Link>
             </div>
             
             <div className="bg-background/10 backdrop-blur-sm rounded-lg p-6 border border-white/20">
@@ -50,9 +47,7 @@ export const HeroSection = () => {
               <p className="opacity-90 mb-4">
                 Crie seu perfil e candidate-se às melhores vagas
               </p>
-              <Button variant="secondary" className="w-full">
-                Criar Perfil
-              </Button>
+              <Link to="/jobs"><Button variant="secondary" className="w-full">Ver Vagas</Button></Link>
             </div>
           </div>
         </div>
