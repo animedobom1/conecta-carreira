@@ -7,7 +7,11 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
-              <Briefcase className="h-8 w-8 text-primary" />
+              <img 
+                src="https://mxsfornecedores.iacodelabs.com.br/favicon.svg" 
+                alt="MX Vagas" 
+                className="h-8 w-8" 
+              />
               <span className="text-2xl font-bold">MX Vagas</span>
             </div>
             <p className="text-background/80 mb-4">

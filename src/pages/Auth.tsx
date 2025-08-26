@@ -78,7 +78,11 @@ export default function Auth() {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link to="/" className="inline-flex items-center space-x-2 group">
-            <Briefcase className="h-10 w-10 text-primary group-hover:scale-110 transition" />
+            <img 
+              src="https://mxsfornecedores.iacodelabs.com.br/favicon.svg" 
+              alt="MX Vagas" 
+              className="h-10 w-10 group-hover:scale-110 transition" 
+            />
             <span className="text-3xl font-bold text-foreground">MX Vagas</span>
           </Link>
           <p className="text-muted-foreground mt-2">Plataforma de Recrutamento e Seleção</p>
